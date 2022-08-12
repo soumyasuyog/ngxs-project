@@ -19,6 +19,7 @@ export class DaterangeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
   findpickervalue(){
     console.log(moment(this.range.value.start).format("YYYY/MM/DD"))
     console.log(moment(this.range.value.end).format("YYYY/MM/DD"))
