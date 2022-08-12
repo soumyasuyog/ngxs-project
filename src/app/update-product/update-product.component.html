@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row mb-5">
+                <div class="col">
+                    <h2>Update products</h2>
+                </div>
+                <div>
+                    <button class="btn btn-primary"><a href="javascript:void(0);" routerLink="/"
+                            style="color:#fff;">Back</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <form [formGroup]="updateproductform" (ngSubmit)="updateProduct()">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Title</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="title" placeholder="Title" formControlName="title">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Description</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="description" placeholder="Description" formControlName="description">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Price</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="price" placeholder="Price" formControlName="price">
+        </div>
+        <div>
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

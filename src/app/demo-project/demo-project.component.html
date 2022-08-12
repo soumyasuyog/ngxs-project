@@ -1,0 +1,36 @@
+<table border="1">
+    <tr>
+        <th>Sl no</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor="let item of userData;let i = index;">
+        <td>{{i+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <th>Sl no</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor="let item of externalfileData;let i = index;">
+        <td>{{i+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+    </tr>
+</table>
+
+
+
+<div *ngFor="let item of products">
+    <p>{{item.title}}</p>
+</div>
+<!-- <div #hello>Hello Angular</div> -->
+
+<!-- <div style="display: block; width: 400px">
+    <canvas #hello height="320">{{ chart }}</canvas>
+  </div> -->

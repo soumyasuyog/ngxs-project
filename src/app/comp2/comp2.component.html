@@ -1,0 +1,40 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row mb-5">
+                <div class="col"><h2>comp2</h2></div>
+                <div><button class="btn btn-primary" (click)="getVideos()">get data</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="result">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Thumbnail</th>
+                                    <th>Title & Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let data of videos">
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <img width="120" [src]="data.thumb" alt="">
+                                    </td>
+                                    <td>
+                                        <strong>{{data.title}}</strong>
+                                        <p>{{data.description}}</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
